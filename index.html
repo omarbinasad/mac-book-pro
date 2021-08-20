@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Tailwindcss Link -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+    <!-- Custom style link -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>iMac</title>
+  </head>
+  <body>
+    <main>
+      <div>
+      <div class="container mx-auto px-4 md:px-2">
+        <div class="border-b-2 grid grid-cols-2">
+          <!-- Image -->
+          <div class=" p-5 rounded border-gray-200 m-5">
+            <div class="w-full">
+              <img
+                src="images/1.png"
+                id="art"
+                class="w-full rounded h-full object-cover"
+                alt=""
+              />
+            </div>
+          </div>
+          <!-- Options -->
+          <div class="mt-10 w-100 mx-auto">
+            <span class="text-3xl font-bold pb-1" id="price">Customize your Blue 24-inch iMac with Apple M1 chip.</span>
+            <div class="pt-2">
+            <span id="desc" class="text-lg text-gray-700"
+              >Apple M1 chip with 8-core CPU with 4 performance cores and 4 efficiency cores, 7-core GPU, and 16-core Neural Engine
+              8GB unified memory
+              256GB SSD storage
+              Two Thunderbolt / USB 4 ports
+              Magic Mouse
+              Magic Keyboard - US English
+            <!-- Memory options -->
+            <div class="pt-10 "> 
+              <h5 class="font-semibold p-1">Memory</h5>
+              <button
+                class="btn
+                
+                hover:text-white
+                hover:bg-black 
+
+                p-2
+                border border-gray-200 
+                rounded
+                "
+                id="memory-8-btn"
+              >
+                
+              8GB unified memory
+              </button>
+              <button
+                id="memory-16-btn"
+                class="btn
+                hover:bg-black 
+                hover:text-white
+                p-2
+                border border-gray-200 
+                rounded
+                "
+              >
+              16GB unified memory      
+              </button>
+            </div>
+             <!-- Storage options -->
+            <div class="pt-10  ">
+              <h5 class="font-semibold p-1">Storage</h5>
+                <button
+                class="btn
+                hover:bg-black 
+                hover:text-white
+                p-2
+                border border-gray-200
+                rounded
+                "
+                id="ssd-256-btn"
+              >256GB SSD storage
+              </button>
+              <button
+                id="ssd-512-btn"
+                class="btn
+                hover:bg-black 
+                hover:text-white
+                  p-2
+                  border border-gray-200
+                  rounded "
+              >
+                512GB SSD storage 
+                   
+              </button>
+              <button
+                id="ssd-1tb-btn"
+                class="btn
+                hover:bg-black 
+                hover:text-white
+                  p-2
+                  border border-gray-200
+                  rounded
+                "
+              >
+              1TB SSD storage  
+              </button>
+            </div>
+             <!-- Delivery/Shipping options -->
+            <div class="pt-10 ">
+              
+              <h5 class="font-semibold p-1">Choose your delivery option</h5>
+              <button
+                class="btn
+                hover:bg-black 
+                hover:text-white
+                  p-2
+                  border border-gray-200
+                  rounded
+                "
+                id="dlv-free-btn"
+              >
+              Friday,Aug 25 FREE Prime Delivery
+              </button>
+              <button
+                id="dlv-charge-btn"
+                class="btn
+                hover:bg-black 
+                hover:text-white
+                  p-2
+                  border border-gray-200
+                  rounded"
+              >
+  
+              Friday,Aug 21 Delivery charge $20    
+              </button>
+              
+            </div>
+            <!-- Calculate prices -->
+            <div class="my-5">
+                
+              <table class="table">
+              <tbody>
+                <tr>
+                  <th scope="row">Best Price</th>
+                  <td class="font-semibold" >$ <span id="best-price">1299</span></td>
+                </tr>
+                <tr>
+                  <th scope="row">Extra Memory Cost</th>
+                  <td class="font-semibold" >$<span id="extra-memory-cost">0</span></td>
+                </tr>
+                <tr>
+                  <th scope="row">Extra Storage Cost</th>
+                  <td class="font-semibold" >$<span id="extra-storage-cost">0</span>
+                  </td>
+                </tr>
+                <tr class="border-top border-secondary">
+                  <th scope="row">Delivery Charge</th>
+                  <td class="font-semibold">$<span id="delivery-charge">0</span>
+                  </td>
+                </tr>
+                <tr >
+                  <th scope="row">Total Price</th>
+                  <td class="font-semibold">$<span id="total-price">1299</span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <h5 class="font-semibold p-1">Add Promo Code</h5>
+            <div class="flex">
+              <input id="promocode-input" class="form-control " type="search" placeholder="Add promocode" aria-label="Search" >
+              <button
+                class="
+                  p-2
+                  border border-gray-200
+                  bg-red-600
+                  text-white
+                  rounded
+                "
+                id="promocode-apply-btn"
+              >Apply</button>
+            </div>
+          </div> 
+        </div>
+      </div>
+    </div>
+    <div class="text-center p-3"><h2 class="font-bold">Total : $ <span id="total-amount">1299</span></h2></div>
+    </main>
+    
+    <!-- Custom js -->
+    <script src="js/app.js"></script>
+  </body>
+</html>
