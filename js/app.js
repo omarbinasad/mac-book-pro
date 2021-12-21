@@ -75,13 +75,13 @@ dlvChargeBtn.addEventListener("click", function () {
 promoBtn.addEventListener("click", function () {
   const promoCodeInput = document.getElementById("promocode-input");
   const promoCodeInputText = promoCodeInput.value;
-
   //condition for specific promocode
+
+
   if (promoCodeInputText == "stevekaku") {
-    const Parcent = (20 / 100) * totalAmount.innerText;
-    totalAmount.innerText = totalAmount.innerText - Parcent;
-  } else {
-    totalAmount.innerText = totalPrice.innerText;
+    const Parcent = (20 / 100) * totalPrice.innerText;
+    totalAmount.innerText = totalPrice.innerText - Parcent;
   }
+
   promoCodeInput.value = "";
 });
